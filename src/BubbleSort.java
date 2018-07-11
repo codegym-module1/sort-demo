@@ -1,15 +1,13 @@
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] array;
-        array = new int[]{2, 3, 5, 6, 1, -2, 14, 12, 36, 10};
-        System.out.println("Array " + array);
+        int[] array = {2, 3, 5, 6, 1, -2, 14, 12, 36, 10};
         printArray(array);
         bubbleSort(array);
     }
 
     private static void printArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            System.out.print(array[i] +  "\t");
+            System.out.print(array[i] + "\t");
         }
     }
 

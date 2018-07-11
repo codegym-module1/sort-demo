@@ -14,10 +14,9 @@ public class BubbleSortByStep {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + "\t");
         }
-        bubbleSort(array);
     }
 
-    private static void  bubbleSort(int[] array) {
+    private static void  bubbleSortByStep(int[] array) {
         for (int u = array.length - 1; u > 0; u--) {
             for (int i = 0; i < u; i++) {
                 if (array[i] > array[i + 1]) {
@@ -27,6 +26,5 @@ public class BubbleSortByStep {
                 }
             }
         }
-        System.out.println();
     }
 }
