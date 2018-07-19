@@ -14,11 +14,13 @@ public class BubbleSortByStep {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i] + "\t");
         }
+        System.out.println();
+        System.out.println("Begin sort processing...");
     }
 
-    private static void  bubbleSortByStep(int[] array) {
-        for (int u = array.length - 1; u > 0; u--) {
-            for (int i = 0; i < u; i++) {
+    private static void bubbleSortByStep(int[] array) {
+        for (int u = array.length-1; u > 0; u--) {
+            for (int i = 0; i < array.length-1; i++) {
                 if (array[i] > array[i + 1]) {
                     int k = array[i];
                     array[i] = array[i + 1];

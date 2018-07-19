@@ -1,6 +1,6 @@
 public class BubbleSort {
     public static void main(String[] args) {
-        int[] array = {2, 3, 5, 6, 1, -2, 14, 12, 36, 10};
+        int[] array = {5, 1, 4, 2, 3, 6};
         printArray(array);
         bubbleSort(array);
     }
@@ -11,9 +11,9 @@ public class BubbleSort {
         }
     }
 
-    private static void  bubbleSort(int[] array) {
-        for (int u = array.length - 1; u > 0; u--) {
-            for (int i = 0; i < u; i++) {
+    private static void bubbleSort(int[] array) {
+        for (int u = array.length-1; u > 0; u--) {
+            for (int i = 0; i < array.length-1; i++) {
                 if (array[i] > array[i + 1]) {
                     int k = array[i];
                     array[i] = array[i + 1];
